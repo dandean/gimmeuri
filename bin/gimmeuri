@@ -39,4 +39,6 @@ result += ';base64,';
 var ps = require('child_process').spawn('pbcopy');
 ps.stdin.write(result);
 
-fs.createReadStream(source, { encoding: 'base64' }).pipe(ps.stdin)
+fs.createReadStream(source, { encoding: 'base64' }).pipe(ps.stdin);
+
+console.log('The datauri for "' + source + '" has been copied to your clipboard.');

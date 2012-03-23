@@ -3,7 +3,7 @@
   "name": "gimmeuri",
   "description": "Converts a file to a datauri and copies it to the clipboard.",
   "tags" : ["fs", "file", "fileify", "datauri", "pbcopy", "xclip"],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/dandean/gimmeuri",
   "repository": {
     "type": "git",
