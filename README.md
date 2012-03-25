@@ -37,7 +37,7 @@ Advanced Usage:
 TODO:
 -----
 
-Provide a interface in JavaScript so you can use `gimmeuri` like this:
+Provide an interface in JavaScript so you can use `gimmeuri` like this:
 
     require('gimmeuri')(path, cb);
 
