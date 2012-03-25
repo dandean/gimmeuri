@@ -9,20 +9,20 @@ Usage:
 
 Copy the datauri for a file to your clipboard:
 
-  gimmeuri path/to/file
+    gimmeuri path/to/file
 
 
 Advanced Usage:
 ---------------
 
-  Usage: gimmeuri [options] <file>
+    Usage: gimmeuri [options] <file>
 
-  Options:
+    Options:
 
-    -m, --max [bytes]       maximum file size to process (1048576)
-    -s, --save-path [path]  path to save the daturi
-    -V, --version           output the version number
-    -h, --help              output usage information
+      -m, --max [bytes]       maximum file size to process (1048576)
+      -s, --save-path [path]  path to save the daturi
+      -V, --version           output the version number
+      -h, --help              output usage information
 
 
 **Save Path**
@@ -39,7 +39,7 @@ TODO:
 
 Provide a interface in JavaScript so you can use `gimmeuri` like this:
 
-  require('gimmeuri')(path, cb);
+    require('gimmeuri')(path, cb);
 
 
 License:
