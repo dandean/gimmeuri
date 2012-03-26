@@ -42,6 +42,14 @@ Provide an interface in JavaScript so you can use `gimmeuri` like this:
     require('gimmeuri')(path, cb);
 
 
+Do a better job with default mime-type parsing. May files should be "text/plain" but get returned as "application/octet-stream". Markdown files, for instance.
+
+
+Provide an option for forced mime-type coercion:
+
+    gimmeuri -f text/plain README.md
+
+
 License:
 --------
 
