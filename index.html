@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gimmeuri by dandean</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Gimmeuri</h1>
+        <p>Converts a file to a datauri and copies it to the clipboard</p>
+        <p class="view"><a href="https://github.com/dandean/gimmeuri">View the Project on GitHub <small>dandean/gimmeuri</small></a></p>
+        <ul>
+          <li><a href="https://github.com/dandean/gimmeuri/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/dandean/gimmeuri/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/dandean/gimmeuri">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>I thought you might like a data uri.</h1>
+
+<p><code>gimmeuri</code> gets you the datauri for a single file and copies it to your clipboard, or optionally saves it to a file. That's it.</p>
+
+<h2>Usage:</h2>
+
+<p>Copy the datauri for a file to your clipboard:</p>
+
+<pre><code>gimmeuri path/to/file
+</code></pre>
+
+<h2>Advanced Usage:</h2>
+
+<pre><code>Usage: gimmeuri [options] &lt;file&gt;
+
+Options:
+
+  -m, --max [bytes]       maximum file size to process (1048576)
+  -s, --save-path [path]  path to save the daturi
+  -V, --version           output the version number
+  -h, --help              output usage information
+</code></pre>
+
+<p><strong>Save Path</strong></p>
+
+<p><code>gimmeuri</code> copies the specified file's data uri to the clipboard by default. It will instead be written to <code>--save-path</code>, if provided.</p>
+
+<p><strong>Max File Size</strong></p>
+
+<p><code>gimmeuri</code> will exit(1) if the specified file is larger than the maximum file size. The default is 1048576 (1 megabyte), but can be overridden with the <code>--max</code> option.</p>
+
+<h2>TODO:</h2>
+
+<p>Provide an interface in JavaScript so you can use <code>gimmeuri</code> like this:</p>
+
+<pre><code>require('gimmeuri')(path, cb);
+</code></pre>
+
+<p>Do a better job with default mime-type parsing. Many files should be "text/plain" but get returned as "application/octet-stream". Markdown files, for instance.</p>
+
+<p>Provide an option for forced mime-type coercion:</p>
+
+<pre><code>gimmeuri -f text/plain README.md
+</code></pre>
+
+<h2>License:</h2>
+
+<p>MIT</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/dandean">dandean</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
