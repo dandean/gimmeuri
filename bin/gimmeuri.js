@@ -35,7 +35,7 @@ function main() {
 }
 
 function exists() {
-  path.exists(source, function(exists) {
+  fs.exists(source, function(exists) {
     if (!exists) {
       return exit('File "' + source + '" does not exist.');
     }
@@ -70,7 +70,7 @@ function ensureNoOverwrite() {
   var savePath = program.savePath;
 
   if (savePath) {
-    path.exists(savePath, function(exists) {
+    fs.exists(savePath, function(exists) {
       if (exists) return exit('File "' + savePath + '" would be overwritten.');
       inspect();
     });
