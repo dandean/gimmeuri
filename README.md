@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/dandean/gimmeuri.png)](http://travis-ci.org/dandean/gimmeuri)
 I thought you might like a data uri.
 ====================================
 
