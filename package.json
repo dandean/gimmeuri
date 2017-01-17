@@ -11,8 +11,8 @@
   },
   "bin" : { "gimmeuri" : "./bin/gimmeuri.js" },
   "dependencies": {
-    "mime": "1.2.5",
-    "commander": "0.5.2"
+    "mime": "1.3.4",
+    "commander": "2.9.0"
   },
   "devDependencies": {},
   "optionalDependencies": {},
